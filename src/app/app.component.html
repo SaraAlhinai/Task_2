@@ -1,0 +1,51 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> 
+
+
+<div class="sidenav" ng-app="myApp" ng-controller="EmpController">
+         <div class="login-main-text">
+            <h2>Angular<br> Application</h2>
+            <p>TASK2</p>
+         </div>
+      </div>
+      <div class="main" style="text-align: center;" >
+         <div class="col-md-6 col-sm-12">
+            <!-- <div>ng-app="ngmaxlengthApp" ng-controller="ngmaxlengthCtrl"</div> -->
+            <div class="login-form">
+               <!-- <form name="personForm" novalidate ng-submit="personForm.$valid &&sendForm()">
+                  <div class="form-group"ng-app="ngminmaxlengthApp" ng-controller="ngminmaxlengthCtrl"> -->
+                     <h1 style=" color: black;">Enter your Name:</h1>
+         <input type="text" [(ngModel)]="newTodo" placeholder="Enter a new To-Do item (4-200 characters)" (keypress)="validateInput($event)"> <br>
+         <button (click)="addTodo()" style="background-color: green">Add</button> <br>
+         <ul>
+           <li *ngFor="let todo of todos; let i = index"><br>
+             {{ todo }}
+             <button style="text-align: center; background-color: red" (click)="removeTodo(i)">Delete</button>
+           </li>
+         </ul>
+                     <!-- <b><label>Enter the List</label></b>
+                     <input  name="pincode" ng-model="txtpin" ng-minlength="4" ng-maxlength="200" 
+                     required  type="text"  class="form-control" placeholder="User list">
+                     <span style="color:Red" ng-show="personForm.pincode.$error.required"> Required! </span> 
+
+ <span style="color:Red" ng-show="personForm.pincode.$dirty&&personForm.pincode.$error.minlength"> Minimum 4 Characters Required </span>
+
+<span style="color:Red" ng-show="personForm.pincode.$dirty&&personForm.pincode.$error.maxlength"> Maximum  200 Characters Allowed </span>
+
+<br /><br /> -->
+                  </div>
+                  <!-- <div class="form-group">
+                     <label>Password</label>
+                     <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-black">Login</button> -->
+                   <!-- <button  ng-click="setValue('emp', data)" type="submit" class="btn btn-secondary">SAVE</button>
+               </form>
+            </div>
+         </div>
+      </div>  -->
+
+
+    
+<router-outlet></router-outlet>
